@@ -66,6 +66,7 @@ public class CustomerLoginControlller {
         username=username.toLowerCase();
 
         Customer customer = customerDao.findByUserId(userId);
+        username=username.toUpperCase();
         if(customer==null)
         {
             System.out.println("customer is null");
